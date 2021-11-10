@@ -1,6 +1,13 @@
+import React from "react";
+import Header from "./Layout/Header";
 import "./App.css";
+
 function App() {
-  return <h1>Haikus</h1>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
 
 export default App;
