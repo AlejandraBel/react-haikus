@@ -1,1 +1,30 @@
+header {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--rosa-claro);
+  border-bottom: 1px solid white;
+}
+#contenedorBuscadorHeader {
+  display: flex;
+  align-items: center;
+}
 
+#buscador {
+  /* Esta es la propiedad que hace posible ocupar todo el espacio posible*/
+  flex-grow: 1;
+  background-color: var(--rosa-claro);
+  outline-style: none;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  color: white;
+}
+
+#buscador::placeholder {
+  color: white;
+}
+#iconoBuscador {
+  color: white;
+}
