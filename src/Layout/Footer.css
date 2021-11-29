@@ -2,7 +2,7 @@ footer {
   position: fixed;
   bottom: 0vh;
   height: 60px;
-  background-color: pink;
+  background-color: var(--rosa-claro);
   width: 100%;
   display: flex;
   justify-content: center;

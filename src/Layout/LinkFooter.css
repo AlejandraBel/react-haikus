@@ -1,6 +1,10 @@
-#ContenedorLinkFooter {
+.ContenedorLinkFooter {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-decoration: white;
+  align-items: center;
+  color: white;
+  margin-left: 4px;
+  margin-right: 4px;
 }
