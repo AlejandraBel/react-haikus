@@ -3,17 +3,18 @@ import Header from "./Layout/Header";
 import "./App.css";
 import Footer from "./Layout/Footer";
 import Main from "./Layout/Main";
-import Home from "./Home/Home";
+//import Home from "./Home/Home";
+import Contactanos from "./Contactanos/Contactanos";
 
 function App() {
   return (
     <>
       <Header />
       <Main>
-        <Home/>
+        {/*<Home/>*/}
+        <Contactanos />
       </Main>
       <Footer />
-
     </>
   );
 }

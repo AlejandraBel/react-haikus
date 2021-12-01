@@ -1,3 +1,8 @@
 .fotodeperfil {
   border-radius: 50%;
 }
+.position {
+  position: relative;
+  top: 40px;
+  left: 40px;
+}

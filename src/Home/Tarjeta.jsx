@@ -3,16 +3,29 @@ import "./Tarjeta.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShareAlt } from "@fortawesome/free-solid-svg-icons";
 
-const Tarjeta = () => {
+const Tarjeta = ({ haiku, autor }) => {
+  const [invisible, setInvisible] = useState(true);
+  const cambiarVisibilidad = () => {
+    /* tu codigo usando la funcion setInvisible() 
+    La idea es pasar por parametro el valor true a seteInvisible()
+    cuando invisibole sea false, y false cuando invisible valga true*/
+  };
   const urlImagen = "https://picsum.photos";
   return (
     <div className="Tarjeta">
-      <div className="ImagenTarjeta">
-        <img src="{`${urlImagen}/500/300}`" alt="ImagenHaiku" />
+      <div className="ImagenTarjeta" onClick={cambiarInvisible}>
+        <p className="Haiku" style={{ display: invisible ? "none" : "block" }}>
+          {haiku}
+        </p>
+        <img src="{'https://picsum.photos/500/300'}" alt="ImagenHaiku" />
       </div>
       <div className="CuerpoTarjeta">
         <div className="InfoTarjeta">
-          <img className="fotodeperfil" src="{`${urlImagen}/32/32`}" alt="" />
+          <img
+            className="fotodeperfil"
+            src="{`https://picsum.photos/32/32`}"
+            alt=""
+          />
           <h4>Titulo del Haiku</h4>
         </div>
         <FontAwesomeIcon icon={faShareAlt} className="IconoCompartirTarjeta" />
