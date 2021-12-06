@@ -1,0 +1,15 @@
+.Contactanos {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+}
+.iconosDeContactanos {
+  color: pink;
+  margin-left: 16px;
+  margin-right: 16px;
+  font-size: 32px;
+}
+.texto {
+  text-align: center;
+}
