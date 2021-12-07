@@ -2,6 +2,7 @@ import react from "react";
 import "./Tarjeta.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShareAlt } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 
 const Tarjeta = ({ haiku, autor }) => {
   const [invisible, setInvisible] = useState(true);
@@ -13,17 +14,17 @@ const Tarjeta = ({ haiku, autor }) => {
   const urlImagen = "https://picsum.photos";
   return (
     <div className="Tarjeta">
-      <div className="ImagenTarjeta" onClick={cambiarInvisible}>
+      <div className="ImagenTarjeta" onClick={cambiarVisibilidad}>
         <p className="Haiku" style={{ display: invisible ? "none" : "block" }}>
           {haiku}
         </p>
-        <img src="{'https://picsum.photos/500/300'}" alt="ImagenHaiku" />
+        <img className="ImagenPrincipal" src="https://picsum.photos/500/300" alt="ImagenHaiku" />
       </div>
       <div className="CuerpoTarjeta">
         <div className="InfoTarjeta">
           <img
             className="fotodeperfil"
-            src="{`https://picsum.photos/32/32`}"
+            src="https://picsum.photos/32/32"
             alt=""
           />
           <h4>Titulo del Haiku</h4>

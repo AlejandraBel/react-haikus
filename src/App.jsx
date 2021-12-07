@@ -5,13 +5,13 @@ import Footer from "./Layout/Footer";
 import Main from "./Layout/Main";
 //import Home from "./Home/Home";
 import Contactanos from "./Contactanos/Contactanos";
+import Home from "./Home/Home";
 
 function App() {
   return (
     <>
       <Header />
       <Main>
-        {/*<Home/>*/}
         <Contactanos />
       </Main>
       <Footer />
